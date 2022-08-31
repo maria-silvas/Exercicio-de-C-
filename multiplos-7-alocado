@@ -1,0 +1,48 @@
+#include <iostream>
+
+#define TAM 5
+int num,i;
+int negativos,pares,multiplos;
+
+using namespace std;
+ main()
+{
+   setlocale(LC_ALL, "Portuguese");
+   cout<<"\n\n PROGRAMA 02 "; 
+   cout<<"\n\nInforme "<<TAM<< " números:"; 
+   for(i=0; i<TAM;i++)
+     { 
+      cin>>num;
+      // testando os negativos
+      if (num <0)
+        {
+        	negativos++;
+		}
+		if (num %2==0)
+        {
+        	pares++;
+		}
+		if (num %7==0)
+        {
+        	multiplos++;
+		}
+  }    
+   // Imprimindo os Resultados     
+   cout <<"\n Foram informados: " << negativos<<" Negativo[s].";
+   cout <<"\n Foram informados: " << pares<<" Pare[s].";  
+   cout <<"\n Foram informados: " << multiplos<<" Múltiplo[s] de 7.";
+   
+   cout<<"\n\n\n";
+
+}
+
+
+
+
+
+//Imprime o vetor
+void mostra_vetor (int vetor[])
+{
+	for (i=0;i<10;i++)
+       cout << "\n Número gerado: " << vetor[i];
+}
